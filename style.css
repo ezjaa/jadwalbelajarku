@@ -1,0 +1,117 @@
+body {
+  background-color: #ececec;
+  color: #333;
+}
+
+header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p, label, li {
+  font-size: 0.8rem;
+}
+
+.sosmed a {
+  padding: 0 0.5rem;
+  text-decoration: none;
+}
+
+.satu {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: darkcyan;
+}
+
+.dua {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main {
+  padding: 1rem 2rem;
+}
+
+.mata ul {
+  padding-left: 1.5rem;
+}
+
+.h2 {
+  text-align: center;
+  background-color: darkcyan;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+}
+
+h3 {
+  padding-left: 0.5rem;
+  font-weight: 500;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  padding: 1rem;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  gap: 0.5rem;
+  margin: 0.2rem;
+  padding: 0.8rem 0.7rem;
+  border-left: 0.3rem solid darkcyan;
+  border-radius: 0.2rem;
+}
+
+button {
+  width: 50%;
+  background-color: darkcyan;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.btn {
+  display: flex;
+  gap: 0.5rem;
+}
+
+aside {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+}
