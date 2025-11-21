@@ -1,0 +1,166 @@
+<!DOCTYPE html><html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Belajar Mingguan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+  
+    html {
+      font-size: 80%;
+    }
+    
+    div {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    h3 {
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: 500;
+    }
+    p {
+      margin: 3px 0;
+      padding-left: 10px;
+      border-left: 3px solid #007bff;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="font-size: 1.3rem; font-weight: bold; text-align: center; background-color: darkblue; padding: 1rem 2rem; margin: 0 auto; border-radius: 0.5rem; color: #fff;">Yang akan di pelajari</h1>
+  <ul style="font-size: 1rem; font-weight: bold;">
+    <li>Algoritma & Pemrograman Dasar</li>
+    <li>Git</li>
+    <li>HTML Dasar</li>
+    <li>CSS Dasar</li>
+    <li>JavaScript</li>
+  </ul>  <!-- SENIN -->  <div>
+    <h2>Senin</h2>
+    <h3>Sesi Pagi</h3>
+    <p><label><input type="checkbox"> Algoritma & Pemrograman Dasar</label></p>
+    <p><label><input type="checkbox"> CSS Dasar</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+    <h3>Sesi Malam</h3>
+    <p><label><input type="checkbox"> Git</label></p>
+    <p><label><input type="checkbox"> HTML Dasar</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+  </div>  <!-- SELASA -->  <div>
+    <h2>Selasa</h2>
+    <h3>Sesi Pagi</h3>
+    <p><label><input type="checkbox"> HTML Dasar</label></p>
+    <p><label><input type="checkbox"> Algoritma & Pemrograman Dasar</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+    <h3>Sesi Malam</h3>
+    <p><label><input type="checkbox"> CSS Dasar</label></p>
+    <p><label><input type="checkbox"> Git</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+  </div>  <!-- RABU -->  <div>
+    <h2>Rabu</h2>
+    <h3>Sesi Pagi</h3>
+    <p><label><input type="checkbox"> CSS Dasar</label></p>
+    <p><label><input type="checkbox"> HTML Dasar</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+    <h3>Sesi Malam</h3>
+    <p><label><input type="checkbox"> Algoritma & Pemrograman Dasar</label></p>
+    <p><label><input type="checkbox"> Git</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+  </div>  <!-- KAMIS -->  <div>
+    <h2>Kamis</h2>
+    <h3>Sesi Pagi</h3>
+    <p><label><input type="checkbox"> Git</label></p>
+    <p><label><input type="checkbox"> CSS Dasar</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+    <h3>Sesi Malam</h3>
+    <p><label><input type="checkbox"> HTML Dasar</label></p>
+    <p><label><input type="checkbox"> Algoritma & Pemrograman Dasar</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+  </div>  <!-- JUMAT -->  <div>
+    <h2>Jumat</h2>
+    <h3>Sesi Pagi</h3>
+    <p><label><input type="checkbox"> HTML Dasar</label></p>
+    <p><label><input type="checkbox"> Git</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+    <h3>Sesi Malam</h3>
+    <p><label><input type="checkbox"> CSS Dasar</label></p>
+    <p><label><input type="checkbox"> Algoritma & Pemrograman Dasar</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+  </div>  <!-- SABTU -->  <div>
+    <h2>Sabtu</h2>
+    <h3>Sesi Pagi</h3>
+    <p><label><input type="checkbox"> CSS Dasar</label></p>
+    <p><label><input type="checkbox"> Algoritma & Pemrograman Dasar</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+    <h3>Sesi Malam</h3>
+    <p><label><input type="checkbox"> HTML Dasar</label></p>
+    <p><label><input type="checkbox"> Git</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+  </div>  <!-- MINGGU -->  <div>
+    <h2>Minggu</h2>
+    <h3>Sesi Pagi</h3>
+    <p><label><input type="checkbox"> Git</label></p>
+    <p><label><input type="checkbox"> HTML Dasar</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+    <h3>Sesi Malam</h3>
+    <p><label><input type="checkbox"> Algoritma & Pemrograman Dasar</label></p>
+    <p><label><input type="checkbox"> CSS Dasar</label></p>
+    <p><label><input type="checkbox"> JavaScript</label></p>
+  </div>
+  <script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const STORAGE_KEY = 'checkboxStates';
+    const RESET_KEY = 'lastReset';function getLastSunday2359() {
+  const d = new Date();
+  const day = d.getDay();
+  const diff = d.getDate() - day; // Sunday
+  const lastSunday = new Date(d.setDate(diff));
+  lastSunday.setHours(23,59,0,0);
+  return lastSunday;
+}
+
+function loadStates() {
+  const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+  checkboxes.forEach((cb, i) => {
+    if (saved[i]) cb.checked = true;
+  });
+}
+
+function saveStates() {
+  const obj = {};
+  checkboxes.forEach((cb, i) => {
+    if (cb.checked) obj[i] = true;
+  });
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(obj));
+}
+
+function weeklyResetCheck() {
+  const lastReset = localStorage.getItem(RESET_KEY);
+  const lastSunday = getLastSunday2359();
+  const now = new Date();
+
+  if (!lastReset || new Date(lastReset) < lastSunday) {
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.setItem(RESET_KEY, now.toISOString());
+  }
+}
+
+weeklyResetCheck();
+loadStates();
+checkboxes.forEach(cb => cb.addEventListener('change', saveStates));
+
+  </script>
+</body>
+</html>
